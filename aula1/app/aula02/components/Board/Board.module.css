@@ -1,0 +1,7 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    width: 810px; /* 8 * 100px */
+    border: 5px solid #3a3a3a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
