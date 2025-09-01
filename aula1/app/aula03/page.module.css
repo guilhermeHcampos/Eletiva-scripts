@@ -1,3 +1,9 @@
+.main {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
