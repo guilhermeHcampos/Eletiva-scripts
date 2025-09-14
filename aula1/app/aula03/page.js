@@ -12,7 +12,6 @@ const menuItems = [
 ];
 
 export default function HomePage() {
-
     const getTituloStyle = (nome) => {
         if (nome === 'Pizza') {
             return {
@@ -29,22 +28,24 @@ export default function HomePage() {
     };
 
     return (
-        <main className={styles.container}>
-            <header className={styles.header}>
-                <h1>Pastelaria do seu Zé 🥤</h1>
-            </header>
+        <main className={styles.main}>
+            <div className={styles.container}>
+                <header className={styles.header}>
+                    <h1>Pastelaria do seu Zé 🥤</h1>
+                </header>
 
-            <section className={styles.menuGrid}>
-                {menuItems.map((item) => (
-                    <article key={item.id} className={styles.card}>{}
-                        <h3 style={getTituloStyle(item.nome)}>
-                            {item.nome}
-                        </h3>
-                        <img src={item.imagemSrc} alt={`Pastel de ${item.nome}`} />
-                        <p className={styles.price}>{item.preco}</p>
-                    </article>
-                ))}
-            </section>
+                <section className={styles.menuGrid}>
+                    {menuItems.map((item) => (
+                        <article key={item.id} className={styles.card}>
+                            <h3 style={getTituloStyle(item.nome)}>
+                                {item.nome}
+                            </h3>
+                            <img src={item.imagemSrc} alt={`Pastel de ${item.nome}`} />
+                            <p className={styles.price}>{item.preco}</p>
+                        </article>
+                    ))}
+                </section>
+            </div>
         </main>
     );
 }

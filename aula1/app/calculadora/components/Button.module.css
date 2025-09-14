@@ -1,0 +1,56 @@
+.button {
+    background-color: #3f3f3f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.button:active {
+    background-color: #666;
+}
+
+.operator {
+    background-color: #a0a0a0;
+    color: #333;
+}
+
+.operator:hover {
+    background-color: #b0b0b0;
+}
+
+.equal {
+    background-color: #1abc9c;
+}
+
+.equal:hover {
+    background-color: #17a085;
+}
+
+.button[label="AC"] {
+    background-color: #a0a0a0;
+    color: #333;
+}
+
+.button[label="AC"]:hover {
+    background-color: #b0b0b0;
+}
+
+.button[label="+"] {
+    background-color: #1abc9c;
+}
+
+.button[label="+"]:hover {
+    background-color: #17a085;
+}
